@@ -4,6 +4,7 @@ html,body{
 }
 
 #container {
+    display: flex;
     margin: auto;
 }
 
@@ -14,7 +15,7 @@ html,body{
 }
 
 #header-container {
-    border-radius: 0px !important;
+    border-radius: 0px;
 }
 
 #header-text{
@@ -26,8 +27,10 @@ html,body{
 }
 
 #delete-btn {
+    display: flex;
+
     position: absolute;
     left: 85%;
     display: none;
-    margin-bottom: 5%;
+    margin-bottom: 10%;
 }
