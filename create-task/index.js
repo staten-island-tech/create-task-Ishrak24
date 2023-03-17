@@ -1,4 +1,3 @@
-// Object to map each starter Pokemon to its type
 const pokemonTypes = {
   Bulbasaur: ["grass", "poison"],
   Charmander: ["fire"],
@@ -26,23 +25,18 @@ const pokemonTypes = {
   Sobble: ["water"],
 };
 
-// Function to determine the winner of a fight
 function determineWinner(pokemon1, pokemon2) {
-  // Check if either Pokemon is missing
   if (!pokemon1 || !pokemon2) {
     return "Both Pokemon must be selected to fight!";
   }
 
-  // Check if the two Pokemon are the same
   if (pokemon1 === pokemon2) {
     return `${pokemon1} and ${pokemon2} beat each other up so much that Nurse Joy can't heal them. They die and Nurse Joy spirals into depression!`;
   }
 
-  // Determine the types of the two Pokemon
   const type1 = pokemonTypes[pokemon1];
   const type2 = pokemonTypes[pokemon2];
 
-  // Determine the winner based on type advantages
   if (type1.includes("grass") && type2.includes("water")) {
     return `${pokemon1} gives ${pokemon2} a cut so bad ${pokemon2}'s bloodline ends!`;
   } else if (type1.includes("water") && type2.includes("fire")) {
@@ -60,7 +54,6 @@ function determineWinner(pokemon1, pokemon2) {
   }
 }
 
-// Event listener for the fight button
 const fightButton = document.getElementById("fight-button");
 fightButton.addEventListener("click", () => {
   const pokemon1 = document.getElementById("pokemon1-select").value;
