@@ -1,36 +1,48 @@
-html,body{
-    height: 100%;
-    width: 100%;
+body, html{
+    height: max-content;
+    background-image: linear-gradient(rgb(255, 136, 136), rgb(255, 255, 255), rgb(0, 0, 0));
+    background-repeat: no-repeat;
 }
 
-#container {
+h1{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+label{
+    font-size: 1.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.one{
+    text-align: center;
+}
+
+.two{
+    text-align: center;
+}
+
+.fight-button {
+    margin: 3px;
     display: flex;
-    margin: auto;
+    justify-content: center;
+    align-items: center;
 }
 
-#poke-container {
-    margin: auto;
-    width: 90%;
-    padding: 10px;
+#fight-button {
+    font-size: 2rem;
 }
 
-#header-container {
-    border-radius: 0px;
+#results {
+    text-align: center;
+    font-size: 1.5rem;
 }
 
-#header-text{
-    margin: 0 auto;
-}
-
-#generate-pokemon {
-    margin: 0 auto;
-}
-
-#delete-btn {
-    display: flex;
-
-    position: absolute;
-    left: 85%;
-    display: none;
-    margin-bottom: 10%;
+.image{
+    text-align: center;
 }

@@ -1,27 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Pokemon</title>
+<html>
+  <head>
+    <title>Starter Pokemon Fight Simulator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Pok%C3%A9_Ball_icon.svg/1200px-Pok%C3%A9_Ball_icon.svg.png">
+  </head>
+  <body>
+    <h1>Starter Pokemon Fight Simulator</h1>
+    <div class="one">
+      <h2>Pokemon 1</h2>
+      <label for="pokemon1-select">Choose your fighter:</label>
+      <select id="pokemon1-select">
+        <option value="Bulbasaur">Bulbasaur</option>
+        <option value="Charmander">Charmander</option>
+        <option value="Squirtle">Squirtle</option>
+        <option value="Chikorita">Chikorita</option>
+        <option value="Cyndaquil">Cyndaquil</option>
+        <option value="Totodile">Totodile</option>
+        <option value="Treecko">Treecko</option>
+        <option value="Torchic">Torchic</option>
+        <option value="Mudkip">Mudkip</option>
+        <option value="Turtwig">Turtwig</option>
+        <option value="Chimchar">Chimchar</option>
+        <option value="Piplup">Piplup</option>
+        <option value="Snivy">Snivy</option>
+        <option value="Tepig">Tepig</option>
+        <option value="Oshawott">Oshawott</option>
+        <option value="Chespin">Chespin</option>
+        <option value="Fennekin">Fennekin</option>
+        <option value="Froakie">Froakie</option>
+        <option value="Rowlet">Rowlet</option>
+        <option value="Litten">Litten</option>
+        <option value="Popplio">Popplio</option>
+        <option value="Grookey">Grookey</option>
+        <option value="Scorbunny">Scorbunny</option>
+        <option value="Sobble">Sobble</option>
+      </select>
+    </div>
+    <div class="two">
+      <h2>Pokemon 2</h2>
+      <label for="pokemon2-select">Choose your fighter:</label>
+      <select id="pokemon2-select">
+        <option value="Bulbasaur">Bulbasaur</option>
+        <option value="Charmander">Charmander</option>
+        <option value="Squirtle">Squirtle</option>
+        <option value="Chikorita">Chikorita</option>
+        <option value="Cyndaquil">Cyndaquil</option>
+        <option value="Totodile">Totodile</option>
+        <option value="Treecko">Treecko</option>
+        <option value="Torchic">Torchic</option>
+        <option value="Mudkip">Mudkip</option>
+        <option value="Turtwig">Turtwig</option>
+        <option value="Chimchar">Chimchar</option>
+        <option value="Piplup">Piplup</option>
+        <option value="Snivy">Snivy</option>
+        <option value="Tepig">Tepig</option>
+        <option value="Oshawott">Oshawott</option>
+        <option value="Chespin">Chespin</option>
+        <option value="Fennekin">Fennekin</option>
+        <option value="Froakie">Froakie</option>
+        <option value="Rowlet">Rowlet</option>
+        <option value="Litten">Litten</option>
+        <option value="Popplio">Popplio</option>
+        <option value="Grookey">Grookey</option>
+        <option value="Scorbunny">Scorbunny</option>
+        <option value="Sobble">Sobble</option>
+      </select>
+    </div>
+    <div class="fight-button">
+    <button id="fight-button">Fight!</button>
+</div>
+    <div id="results"></div>
+
+    <div class="image">
+        <img src="https://forums.bulbagarden.net/index.php?attachments/1589023794638-png.133144/" alt="image">
+    </div>
+
     <script src="index.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
-    <link rel="stylesheet" href="index.css">
-</head>
-<body>
-    <div id="header-container" class="ui inverted segment">
-        <div class="ui inverted secondary menu">
-           <h1 id="header-text">Kanto Pokemon Fight</h1>
-        </div>
-    </div>
-    <div id="container">
-        <div id="poke-container" class="ui cards">
-                <button id="generate-pokemon" class="ui secondary button">Generate Pokemon</button>
-        </div>
-    </div>
-    <div id="delete-container">
-        <button id="delete-btn" class="ui red button">Delete</button>
-    </div>
-</body>
+  </body>
 </html>
